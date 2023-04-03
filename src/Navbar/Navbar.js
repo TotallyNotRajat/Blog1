@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route, Link, Router, Routes } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -18,6 +19,17 @@ export default function Navbar() {
                 margin: "0px 20px 0px 0px",
               }}
             />
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/Write">Write</Link>
+              </li>
+              <li>
+                <Link to="/Blog">Blog</Link>
+              </li>
+            </ul>
             <input
               className="form-control me-2"
               type="search"
